@@ -27,6 +27,7 @@ We are building different machine learning models to predict if an employer is w
 Data Preprocessing:
 
   Dealing with the missing values:
+  
 •	We kept categorical data where we can, as perhaps the fact that we do not have a company size or the company type could actually tell us something.
 
 •	Additionally, we will keep the null gender values as of these, 30% have a target of 1 in the dataset, so this could be a telling data point, even if we don't quite understand it yet.
@@ -44,11 +45,17 @@ Dummy variables like (NA, Unknown ) are replaced for the null values whose missi
 From the below graphs we can infer the below insights:
 
 •	The proportion of men who are not looking for a job change far exceeds the proportion of men who are looking for a job change
+
 •	most candidates with relevant experience do not look for job changes in a large proportion
+
 •	in the types of registered courses, most people are not registered for courses and are not willing to look for job changes
+
 •	Most of these groups have a high degree of education 
+
 •	The candidate's major is basically STEM. This shows that many people are not changing industries.
+
 •	Among the groups that do not plan to change jobs, the number of their employer companies is basically between 50-500.
+
 •	The proportion of unchanged jobs exceeds the proportion of changed jobs, and employees who have just joined the company for about a year are less willing to change jobs
 
 We have an imbalanced dataset where there are  many more non job-seekers than job-seekers.
