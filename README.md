@@ -102,3 +102,5 @@ we used SMOTE, and re-trained Logistics Regression & Random Forest models. The L
 Decision Making :
 This model (Logistic  Regression ) will perform well when deployed in the workflow of the organization as well as the real world applications for HR analytics 
 Considering this as a HR problem, one way we can look at it is by reducing the number of false positives Because, the company might be interested in only those people who are switching the jobs, and in order to increase the retention rate of their employees, company might be incurring extra costs and increased expenditures by design various programs, sessions, events..etc to build up the morale of people switching jobs
+
+Please fine our video to know more about project https://youtu.be/noSzXp8F9rg
