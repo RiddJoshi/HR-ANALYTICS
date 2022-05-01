@@ -6,10 +6,15 @@ Problem Statement:
 3.	Also, to analyze where HR team needs to improve candidate experience in organization to decrease the attrition rate of the company 
 Business Case Study:
 
-A large company named XYZ, employs, at any given point of time, around x employees. However, every year, around ~15% of its employees leave the company and need to be replaced with the talent pool available in the job market. The management believes that this level of attrition (employees leaving, either on their own or because they got fired) is bad for the company, because of the several reasons. Few are listed below 
+A large company named XYZ, employs, at any given point of time, around x employees. However, every year, around ~15% of its employees leave the company and need to be replaced with the talent pool available in the job market. The management believes that this level of attrition (employees leaving, either on their own or because they
+got fired) is bad for the company, because of the several reasons. Few are listed below 
+
 •	The former employees’ projects get delayed, which makes it difficult to meet timelines, resulting in a reputation loss among consumers and partners
+
 •	A sizeable department has to be maintained, for the purposes of recruiting new talent
+
 •	More often than not, the new employees have to be trained for the job and/or given time to acclimatize themselves to the company
+
 Hence, the management has contracted an HR analytics firm to understand what factors they should focus on, in order to curb attrition. In other words, they want to know what changes they should make to their workplace, in order to get most of their employees to stay. Also, they want to know which of these variables is most important and needs to be addressed right away.
 
 Overview:
@@ -23,7 +28,9 @@ Data Preprocessing:
 
   Dealing with the missing values:
 •	We kept categorical data where we can, as perhaps the fact that we do not have a company size or the company type could actually tell us something.
+
 •	Additionally, we will keep the null gender values as of these, 30% have a target of 1 in the dataset, so this could be a telling data point, even if we don't quite understand it yet.
+
 •	As a reminder: Target: 0 – Not looking for job change, 1 – Looking for a job change
 
 Added a new category 'unknown' to replace Null values in the data for few categorical columns company_size, company_type, major_discipline and gender and then dropped the null values which has very less percentage. 
@@ -31,9 +38,11 @@ Dropped null values of the columns which has  missing values less than 5% from t
 Dummy variables like (NA, Unknown ) are replaced for the null values whose missing values are more than 5% rather than going for mode or mean as this doesn’t give significance in taking mode in city , city development idex columns 
 
   Encoding Categorical Variables:
+  
 •	We have converted the categorical features 'city', 'gender', 'relevent_experience', 'enrolled_university', 'education_level', 'major_discipline'
 
 From the below graphs we can infer the below insights:
+
 •	The proportion of men who are not looking for a job change far exceeds the proportion of men who are looking for a job change
 •	most candidates with relevant experience do not look for job changes in a large proportion
 •	in the types of registered courses, most people are not registered for courses and are not willing to look for job changes
@@ -74,11 +83,13 @@ Our final Logistic Regression model performs well on all metrics, particularly r
 The only downside with the model is that it often predicts that a person is looking for a new role even if they are not. However, on balance, this model should be is still worthy of selection.
 Conclusion:
 Finally, we performed several machine learning algorithms to try to predict whether or not someone would be a job seeker or not. We looked at:
+
 •	SVM
 •	Decision Trees
 •	Random Forests
 •	Logisitic Regression
 •	XGBoost
+
 we used SMOTE, and re-trained Logistics Regression & Random Forest models. The Logistic Regression model performed great and we would select this Model 
 
 Decision Making :
